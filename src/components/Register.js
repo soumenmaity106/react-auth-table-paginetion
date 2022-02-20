@@ -47,10 +47,10 @@ const vlast_name = (value) => {
 };
 
 const vpassword = (value) => {
-	if (value.length < 6 || value.length > 40) {
+	if (value.length < 8 || value.length > 16) {
 		return (
 			<div className="alert alert-danger" role="alert">
-				The password must be between 6 and 40 characters.
+				The password must be between 8 and 16 characters.
 			</div>
 		);
 	}
